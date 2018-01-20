@@ -1,0 +1,28 @@
+{
+    "name": "mister-music",
+    "version": "0.0.1",
+    "description": "Music playground, using keyboard, controller, and websockets.",
+    "scripts": {
+        "babel": "babel --presets env src/js/app.js -o dist/js/bundle.js",
+        "pack": "webpack",
+        "start": "http-server",
+        "watch": "npm run pack -- -d --watch",
+        "test": "mocha"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "babel": "^6.23.0",
+        "dotenv": "^4.0.0",
+        "express": "^4.16.2"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.1",
+        "eslint": "^4.15.0",
+        "http-server": "^0.11.1",
+        "mocha": "^5.0.0",
+        "webpack": "^3.10.0"
+    }
+}
